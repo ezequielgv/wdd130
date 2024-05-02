@@ -3,11 +3,11 @@
 :root {
     --primary-color: #24B6D4;
     --secondary-color: #3E8694;
-    --accent-1-color: #262626;
-    --accent-2-color: #D47524;
+    --accent1-color: #262626;
+    --accent2-color: #D47524;
 
     --heading-font: "Poppins", sans-serif;
-    --default-font: "Poppins", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
 
     --nav-background-color: #262626;
     --nav-link-color: #ffffff;
@@ -16,14 +16,14 @@
 }
 
 body {
-    font-family: var(--default-font);
+    font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--default-font);
-    color: var(--accent-1-color);
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
 }
 
 header {
