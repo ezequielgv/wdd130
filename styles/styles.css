@@ -35,6 +35,7 @@ main img {
 p { padding: 10px; }
 
 aside {
+    position: relative;
     width: 500px;
     text-align: center;
 }
@@ -46,7 +47,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    left: 215px;
+    left: 200px;
 }
 
 footer {
