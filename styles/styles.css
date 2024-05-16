@@ -8,7 +8,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 20px;
 }
 
 header, footer{
@@ -44,7 +44,7 @@ h1 {
 }
 
 main {
-    grid-column: 4/6;
+    grid-column: 2/7;
     margin: 1rem;
 }
 
@@ -63,7 +63,7 @@ aside {
     position: relative;
     width: 500px;
     text-align: center;
-    grid-column: 2/4;
+    grid-column: 1/2;
     grid-row: 1/2;
 }
 
@@ -81,6 +81,11 @@ footer {
     margin-top: 50px;
     border-top: 1px solid;
     text-align: center;
+}
+
+header, footer, .grid {
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 /* Class Selectors */
