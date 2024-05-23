@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    text-emphasis-color: #000;
+    font-weight: 100;
+    font-style: normal;
+    margin: 10vh;
+}
+
+header {
+    text-align: left;
+    margin-top: 50px;
+}
+
+form {
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    border: #292929 2px solid;
+    border-radius: 10px;
+    background-color: #ced7a4;
+    box-shadow: 3px 3px #292929;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-color: #1c1c1c;
+    box-shadow: 3px 3px #363636;
+}
+
+legend {
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+label, input, button, select, textarea { 
+    font-family: "Reddit Mono", "Roboto";
+    font-weight: bolder;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    color: #fff;
+    background-color: #87029c;
+    border-radius: 5px;
+    border: #292929 1.5px solid;
+    padding: 0.5%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    box-shadow: 2px 2px #292929;
+}
+
+button:hover {
+    background-color: #ced7a4;
+    color: #292929;
+    font-weight: 900;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    border-top: #000 1px solid;
+    font-weight: bolder;
+}
+
+/* Classes */
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 { grid-template-columns: 1fr 2fr; }

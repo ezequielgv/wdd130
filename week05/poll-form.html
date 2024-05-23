@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 - HTML Form</title>
+
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 - HTML Form - Ezequiel Videla</h1>
+    </header>
+
+    <main>
+        <form action="get">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">User Name:</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" name="useremail" id="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="">Choose...</option>
+                        <option value="Chrome">Chrome</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Opera">Opera</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet" />
+                </div>
+
+                <label for="places">List the places you have lived:</label>
+                <textarea name="places" id="places" placeholder="Brazil, Argentina, USA, Etc..."></textarea>
+
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p> ©️ 2024 - HTML Form - Ezequiel Videla</p>
+    </footer>
+</body>
+</html>
