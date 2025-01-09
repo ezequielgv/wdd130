@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+}
+
+main {
+    width: 80%;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+aside {
+    width: 40%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #666666;
+    color: #ffffff;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
