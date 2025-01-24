@@ -87,7 +87,7 @@ section h2 {
 /* Adventure Section */
 section:nth-of-type(2) img {
     width: 19%;
-    margin: 0.5%;
+    margin: 0.2%;
     border-radius: 5px;
 }
 
@@ -96,7 +96,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     padding: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     color: white;
 }
 
