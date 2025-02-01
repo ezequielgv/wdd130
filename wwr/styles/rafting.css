@@ -70,12 +70,29 @@ nav a {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.hero article {
+/* .hero article {
     position: absolute;
     bottom: 20px;
     right: 20px;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+    border-radius: 50%;
+} */
+
+.hero article {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 15%;
+    width: 95%;
+    margin-left: 10px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -104,6 +121,40 @@ nav a {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Adventure Section */
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.adventure-grid figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.adventure-grid figure:hover {
+    transform: scale(1.05);
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.adventure-grid figcaption {
+    margin-top: 10px;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 0.9em;
 }
 
 /* Footer */
