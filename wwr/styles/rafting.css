@@ -296,7 +296,7 @@ fieldset legend {
 }
 
 .btn {
-    background: var(--accent2-color);
+    background: var(--accent1-color);
     color: white;
     padding: 12px 24px;
     border: none;
@@ -308,7 +308,7 @@ fieldset legend {
 }
 
 .btn:hover { 
-    background: var(--accent1-color);
+    background: var(--accent2-color);
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
