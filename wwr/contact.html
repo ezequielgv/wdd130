@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ezequiel Videla">
+    <meta name="description" content="Contact Wild Rapids Rafting Co. to plan your next rafting adventure.">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    
+    <title>Wild Rapids Rafting Co. - Contact</title>
+</head>
+<body>
+    <header>
+        <img src="images/wild-rapids-logo.jpeg" alt="Logo Wild Rapids">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 123 River Rd, Rapids City</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Email:</strong> contact@wildrapids.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="employee-profile">  
+                <h2>Our Team</h2>
+                <img src="images/employee1.png" alt="Guide 1">
+                <img src="images/employee2.png" alt="Guide 2">
+                <img src="images/employee3.png" alt="Guide 3">
+            </div>
+            
+            <div class="form-contact">
+                <h2>Get in Touch</h2>
+                <form action="#" method="get">
+                    <label for="user-name"><b>Name:</b></label>
+                    <input type="text" id="user-name" placeholder="Your Name" required>
+
+                    <label for="user-email"><b>Email:</b></label>
+                    <input type="email" id="user-email" placeholder="Your Email" required>
+
+                    <fieldset>
+                        <legend>Inquiry Type:</legend>
+                        <label for="general-inquiry">
+                            <input type="radio" name="custom-radio" id="general-inquiry" value="general">General Inquiry
+                        </label>
+                        
+
+                        <label for="reservation-question">
+                            <input type="radio" name="custom-radio" id="reservation-question" value="reservation"> Reservation Question
+                        </label>
+
+                        <label for="website-suggestion">
+                            <input type="radio" name="custom-radio" id="website-suggestion" value="website">Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <label for="text-message"><b>Message:</b></label>
+                    <textarea id="text-message" placeholder="Your Message" required></textarea>
+
+                    <div class="newsletter">
+                        <input type="checkbox" id="subscribe" value="yes">
+                        <label for="subscribe">Subscribe to our monthly newsletter</label>
+                    </div>
+                    
+                    <button class="btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Wild Rapids Rafting Co. | Ezequiel Videla</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook-logo-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter-logo-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram-logo-icon.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
