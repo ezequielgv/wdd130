@@ -70,23 +70,6 @@ nav a {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* .hero article {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.hero article img {
-    float: right;
-    width: 100px;
-    margin-left: 15px;
-    border-radius: 50%;
-} */
-
 .hero article {
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
@@ -105,10 +88,12 @@ nav a {
 }
 
 /* History Section Styles */
+
 .history-content {
     display: grid;
+    grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     margin: 20px 0;
     padding: 20px;
@@ -116,11 +101,22 @@ nav a {
     border-radius: 8px;
 }
 
-.history-text {
+h2 { 
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.history-text-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.history-text-2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 20px;
 }
 
 /* Adventure Section */
