@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ezequiel Videla">
-    <meta name="description" content="Experience the thrill of whitewater rafting with [Company Name]. Discover exciting routes, all-inclusive packages, and unforgettable adventures for all skill levels. Book your water adventure today!">
-
+    <title>Wild Rapids Rafting Co. | Home</title>
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    
-    <title>Wild Rapids Rafting Co. - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,27 +19,62 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
+    <main class="grid-container">
+        <section class="hero">
+            <img class="hover-scale rounded-img shadow" src="images/hero-image.jpg" alt="Hero Image of Rafting">
+            <h1>Welcome to Wild Rapids Rafting Co.</h1>
+        </section>
 
-        <div class="hero">
-            <h1 class="contact-title">Home</h1>
-            
-        </div>
+        <section class="newsletter-signup p-md">
+            <div class="card">
+                <h2 class="text-center">Stay Informed - Sign Up for Our Newsletter!</h2>
+                <form class="form form-newsletter" action="#" method="post">
+                    <fieldset>
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <div class="form-contact card padding-md">
-            <form class="flex-col gap-15" action="#">
-                <label for="new-name-usu">Name:</label>
-                <input type="text" id="new-name-usu">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" name="email" placeholder="Email@test.com" required>
+                        
+                        <label for="password"><b>Password:</b></label>
+                        <input type="password" id="password" name="password" placeholder="Your password" required>
+                    </fieldset>
+                    <button type="submit" class="btn-submit hover-scale hover-color m-t-sm">Sign Up</button>
+                </form>
+            </div>
+        </section>
 
-                <label for="new-email-usu">Email:</label>
-                <input type="email" id="new-email-usu">
+        <section class="call-to-action card p-0 text-center">
+            <div class="m-b-lg">
+                <h2>Ready for an Adventure?</h2>
+                <p>Explore our exciting rafting trips and book your unforgettable experience today!</p>
+                <a href="trips.html" class="btn-submit hover-scale hover-color">View Trips</a>
+            </div>
+        </section>
 
-                <label for="new-pass-usu">Password:</label>
-                <input type="password" id="new-pass-usu">
+        <section class="grid-content m-b-lg">
+            <article class="card p-md m-sm">
+                <img class="img-sm rounded-img-top hover-scale shadow" src="images/rafting1.jpg" alt="Image of people rafting on a river">
+                <h3 class="text-center">Experience the Thrill of Whitewater Rafting</h3>
+                <p>Wild Rapids Rafting Co. offers breathtaking white water rafting experiences for all skill levels. From gentle floats to exhilarating rapids, we have a trip for you. Our expert guides ensure your safety and enjoyment as you navigate the stunning rivers.</p>
+            </article>
 
-                <button class="btn"> Sing Up</button>
-            </form>
-        </div>
+            <article class="card p-md m-sm">
+                <h3 class="text-center">Our Mission</h3>
+                <p>Our mission is to provide unforgettable and safe rafting adventures, fostering a love for nature and outdoor activities. We strive to exceed expectations with every trip, ensuring our guests leave with lasting memories and a desire to return.</p>
+            </article>
+
+            <article class="card p-md m-sm">
+                <h3 class="text-center">Explore Our Offerings</h3>
+                <p>Beyond just rafting, we offer a range of packages that can include camping, meals, and guided hikes.  Make it a full outdoor experience! Check out our <a href="trips.html">Trips</a> page for more details and to find the perfect adventure for you.</p>
+            </article>
+
+            <article class="card p-md m-sm">
+                <img class="img-sm rounded-img-top hover-scale shadow" src="images/rafting2.jpg" alt="Another image of rafting adventure">
+                <h3 class="text-center">Why Choose Wild Rapids?</h3>
+                <p>We are passionate about rafting and dedicated to providing exceptional service. With years of experience and a commitment to safety, Wild Rapids Rafting Co. is your best choice for adventure. Discover the beauty of nature and the adrenaline rush of rafting with us!</p>
+            </article>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Wild Rapids Rafting Co. | Ezequiel Videla</p>

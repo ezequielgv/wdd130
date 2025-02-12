@@ -1,9 +1,13 @@
 /* === CSS === */
 :root {
     --primary-color: #f4f4f5;
+    --primary-color-rgb: 244, 244, 245;
     --secondary-color: #113e78;
+    --secondary-color-rgb: 17, 62, 120;
     --accent1-color: #4f60b5;
+    --accent1-color-rgb: 79, 96, 181;
     --accent2-color: #065b61;
+    --accent2-color-rgb: 6, 91, 97;
     --heading-font: 'Raleway', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
 }
@@ -38,7 +42,7 @@ h1, h2 {
 
 /* Hover Efects */
 .hover-scale { transition: transform 0.3s ease; }
-.hover-scale:hover { transform: scale(1.05); }
+.hover-scale:hover { transform: scale(1.02); }
 
 .hover-color { transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; }
 .hover-color:hover { background-color: var(--accent2-color); color: white; }
@@ -76,18 +80,27 @@ nav {
     gap: 20px;
 }
 
-nav a {
+a {
     color: var(--accent2-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    background-image: linear-gradient(to right, var(--accent1-color) 0%, var(--accent1-color) 0%);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover { color: var(--accent1-color); }
+nav a:hover {
+    color: var(--accent1-color);
+    background-size: 100% 2px;
+    font-weight: bold;
+}
 
 /* === Hero Section === */
 .hero {
     position: relative;
     margin: 20px 0;
+    text-align: center;
 }
 
 .hero img {
@@ -98,12 +111,15 @@ nav a:hover { color: var(--accent1-color); }
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     font-size: 3em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(var(--accent1-color-rgb), 0.6);
+    padding: 20px; /* Añadir padding para que el fondo se vea */
+    border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 .hero article {
@@ -218,13 +234,12 @@ nav a:hover { color: var(--accent1-color); }
     gap: 20px;
 }
 
-/* === Formulario de Contacto === */
 .form-contact form {
     display: grid;
     gap: 20px;
 }
 
-.form-contact input, .form-contact textarea {
+.form input, .form textarea {
     width: 95%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -233,13 +248,13 @@ nav a:hover { color: var(--accent1-color); }
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-contact input:focus, .form-contact textarea:focus {
+.form input:focus, .form textarea:focus {
     transform: scale(1.02);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     outline: none;
 }
 
-.form-contact textarea {
+.form textarea {
     min-height: 120px;
     resize: vertical;
 }
@@ -283,6 +298,41 @@ input[type="radio"], input[type="checkbox"] {
     width: 100%;
 }
 
+/* === Index Page === */
+.newsletter-signup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.newsletter-signup .card{ grid-column: 2/3; }
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* === Trips Page Additions === */
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+tr:hover { background-color: rgba(var(--primary-color-rgb), 0.5); }
+
 /* === Footer === */
 footer {
     display: flex;
@@ -306,7 +356,38 @@ footer .sociallinks img {
 }
 
 /* === Utilities === */
+.shadow { box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 24px 8px rgba(0, 0, 0, 0.05); }
+.shadow:hover { box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.20), 0 6px 16px 0 rgba(0, 0, 0, 0.16), 0 9px 24px 8px rgba(0, 0, 0, 0.12); }
 .text-center { text-align: center; }
-.padding-md { padding: 20px; }
-.margin-b-lg { margin-bottom: 25px; }
-.rounded-img { border-radius: 50%; }
+.rounded-img { border-radius: 12px; }
+.rounded-img-top { border-radius: 12px 12px 0 0; }
+
+/* Padding Utilities */
+.p-0 { padding: 0; }
+.p-xs { padding: 5px; }
+.p-sm { padding: 10px; }
+.p-md { padding: 20px; }
+.p-lg { padding: 30px; }
+
+/* Margin Bottom Utilities */
+.m-b-0 { margin-bottom: 0; }
+.m-b-xs { margin-bottom: 5px; }
+.m-b-sm { margin-bottom: 10px; }
+.m-b-md { margin-bottom: 20px; }
+.m-b-lg { margin-bottom: 25px; }
+
+/* Margin Top Utilities */
+.m-t-0 { margin-top: 0; }
+.m-t-xs { margin-top: 5px; }
+.m-t-sm { margin-top: 10px; }
+.m-t-md { margin-top: 20px; }
+.m-t-lg { margin-top: 25px; }
+
+/* Margin Utilities */
+.m-0 { margin: 0; }
+.m-xs { margin: 5px; }
+.m-sm { margin: 10px; }
+.m-md { margin: 20px; }
+.m-lg { margin: 25px; }
+
+.img-sm { height: auto; width: 100%;}
